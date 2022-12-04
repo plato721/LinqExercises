@@ -1,6 +1,6 @@
 namespace LinqExercises;
 
-public class MapPatternTest
+public class SelectPatternTest
 {
     [Fact]
     public void Capitalize()
