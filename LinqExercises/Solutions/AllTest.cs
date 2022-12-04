@@ -49,4 +49,44 @@ public class AllTest
         var allEmpty = strings.All(string.IsNullOrEmpty);
         Assert.False(allEmpty);
     }
+    
+    [Fact]
+    public void NotAllUppercase()
+    {
+        var words = new List<string> { "DOUGHNUT", "CASH", "MAIN", "bOWl", "SMACK", "SAND" };
+        var allCaps = words.All(w => w.ToUpper() != w);
+        Assert.False(allCaps);
+    }
+
+    [Fact]
+    public void AllLies()
+    {
+        var lies = new List<bool> { false, false, false, false };
+        var allLies = lies.All(l => l == false);
+        Assert.True(allLies);
+    }
+
+    [Fact]
+    public void AllMultiplesOf7()
+    {
+        var numbers = new List<int> { 42, 14, 35, 49, 28, 56, 21, 7 };
+        var allMultiplesOf7 = numbers.All(n => n % 7 == 0);
+        Assert.True(allMultiplesOf7);
+    }
+
+    [Fact]
+    public void NotAll3DigitsLong()
+    {
+        var numbers = new List<int> { 981, 831, 509, 332, 892, 8999, 110 };
+        var all3Digits = numbers.All(n => Convert.ToString(n).Length == 3);
+        Assert.False(all3Digits);
+    }
+
+    [Fact]
+    public void All4LetterWords()
+    {
+        var words = new List<string> { "love", "hate", "fire", "bird", "call" };
+        var all4Letters = words.All(w => w.Length == 4);
+        Assert.True(all4Letters);
+    }
 }
