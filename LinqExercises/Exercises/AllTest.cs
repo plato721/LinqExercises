@@ -14,7 +14,9 @@ public class AllTest
     public void NotAllZeros()
     {
         var numbers = new List<int> { 0, 0, 0, 0, 1, 0, 0 };
-        var allZeros = false; // replace with your code
+        var allZeros = numbers.All(n =>
+                n == n // replace with your code .. can collapse into one line above
+        );
         Assert.False(allZeros);
     }
 

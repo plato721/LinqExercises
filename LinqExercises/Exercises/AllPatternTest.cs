@@ -19,7 +19,10 @@ public class AllPatternTest
     {
         var numbers = new List<int> { 0, 0, 0, 0, 1, 0, 0 };
         var allZeros = true;
-        // Your code goes here
+        foreach (var number in numbers)
+        {
+            // Your code goes here
+        }
         Assert.False(allZeros);
     }
 
