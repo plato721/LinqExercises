@@ -10,7 +10,7 @@ public class AnyTest
         Assert.True(hasZero);
     }
 
-    [Fact]
+    [Fact(Skip="Unskip when your code has been added")]
     public void DoesNotHaveAnyZeros()
     {
         var numbers = new List<int> { 3, 1, 3, 2, 4, 9, 8 };
@@ -20,7 +20,7 @@ public class AnyTest
         Assert.False(hasZero);
     }
 
-    [Fact]
+    [Fact(Skip="Unskip when your code has been added")]
     public void HasAtLeastOneAlice()
     {
         var names = new List<string> { "Bill", "Bob", "Burton", "Alice", "Brandon" };
@@ -28,7 +28,7 @@ public class AnyTest
         Assert.True(hasAlice);
     }
 
-    [Fact]
+    [Fact(Skip="Unskip when your code has been added")]
     public void NoAlices()
     {
         var names = new List<string> { "Chuck", "Charlene", "Cory", "Chris", "Carl" };
@@ -36,7 +36,7 @@ public class AnyTest
         Assert.False(hasAlice);
     }
 
-    [Fact]
+    [Fact(Skip="Unskip when your code has been added")]
     public void HasAMultiWordPhrase()
     {
         var phrases = new List<string> { "Sure!", "OK.", "I have no idea.", "Really?Whatever." };
@@ -44,7 +44,7 @@ public class AnyTest
         Assert.True(hasMultiwordPhrase);
     }
 
-    [Fact]
+    [Fact(Skip="Unskip when your code has been added")]
     public void NoMonkeys()
     {
         var animals = new List<string> { "elephant", "hippo", "jaguar", "python" };
@@ -52,7 +52,7 @@ public class AnyTest
         Assert.False(hasMonkeys);
     }
 
-    [Fact]
+    [Fact(Skip="Unskip when your code has been added")]
     public void NoMultiplesOfFive()
     {
         var numbers = new List<int> { 3, 1, 3, 2, 4, 9, 8 };
