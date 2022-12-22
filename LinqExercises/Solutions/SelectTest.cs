@@ -2,19 +2,16 @@ using System.Text.RegularExpressions;
 
 namespace LinqExercises.Solutions;
 
-public class SelectPatternTest
+public class SelectTest
 {
   [Fact]
   public void Capitalize()
   {
     var names = new List<string> { "alice", "bob", "charlie" };
-    
-    var capitalizedNames = new List<string>();
-    foreach (var name in names)
-    {
-      var capitalizedName = name[..1].ToUpper() + name[1..]; 
-      capitalizedNames.Add(capitalizedName);
-    }
+
+    var capitalizedNames = names.Select(n =>
+      n[..1].ToUpper() + n.Substring(1)
+    );
     
     var expectedNames = new List<string> { "Alice", "Bob", "Charlie" };
     Assert.Equal(capitalizedNames, expectedNames);
@@ -25,11 +22,7 @@ public class SelectPatternTest
   {
     var numbers = new List<int> { 1, 2, 3, 4, 5 };
     
-    var doubles = new List<int>();
-    foreach (var number in numbers)
-    {
-      doubles.Add(number * 2);
-    }
+    var doubles = numbers.Select(n => n * 2);
     
     Assert.Equal(new List<int> { 2, 4, 6, 8, 10 }, doubles);
   }
@@ -38,12 +31,8 @@ public class SelectPatternTest
   public void Squares()
   {
     var numbers = new List<int> { 1, 2, 3, 4, 5 };
-    
-    var squares = new List<int>();
-    foreach (var number in numbers)
-    {
-      squares.Add(number * number);
-    }
+
+    var squares = numbers.Select(n => n * n);
     
     Assert.Equal(new List<int> { 1, 4, 9, 16, 25 }, squares);
   }
@@ -52,12 +41,8 @@ public class SelectPatternTest
   public void Lengths()
   {
     var names = new List<string> { "alice", "bob", "charlie", "david", "eve" };
-    
-    var lengths = new List<int>();
-    foreach (var name in names)
-    {
-      lengths.Add(name.Length);
-    }
+
+    var lengths = names.Select(n => n.Length);
     
     Assert.Equal(new List<int> { 5, 3, 7, 5, 3 }, lengths);
   }
@@ -66,13 +51,10 @@ public class SelectPatternTest
   public void NormalizeZipCodes()
   {
     var numbers = new List<int> { 234, 10, 9119, 38881 };
-    
-    var zipCodes = new List<string>();
-    foreach (var number in numbers)
-    {
-      var normalized = number.ToString().PadLeft(5, '0');
-      zipCodes.Add(normalized);
-    }
+
+    var zipCodes = numbers.Select(n => 
+      n.ToString().PadLeft(5, '0')
+    );
     
     Assert.Equal(new List<string>{ "00234", "00010", "09119", "38881" }, zipCodes);
   }
@@ -80,19 +62,16 @@ public class SelectPatternTest
   [Fact]
   public void Backwards()
   {
-    string ReverseString(string word)
+    string ReverseString(string n)
     {
-      char[] charArray = word.ToCharArray();
+      var charArray = n.ToCharArray();
       Array.Reverse(charArray);
       return new string(charArray);
     }
+
     var names = new List<string> { "alice", "bob", "charlie", "david", "eve" };
-    
-    var backwards = new List<string>();
-    foreach (var name in names)
-    {
-      backwards.Add(ReverseString(name));
-    }
+
+    var backwards = names.Select(ReverseString);
     
     Assert.Equal(new List<string> { "ecila", "bob", "eilrahc", "divad", "eve" }, backwards);
   }
@@ -101,13 +80,10 @@ public class SelectPatternTest
   public void WordsWithNoVowels()
   {
     var words = new List<string> { "green", "sheep", "travel", "least", "boat" };
-    
-    var withoutVowels = new List<string>();
-    foreach (var word in words)
-    {
-      var noVowelsWord = Regex.Replace(word, "[aeiou]", "");
-      withoutVowels.Add(noVowelsWord);
-    }
+
+    var withoutVowels = words.Select(w =>
+      Regex.Replace(w, "[aeiou]", "")
+    );
     
     Assert.Equal(new List<string> { "grn", "shp", "trvl", "lst", "bt" }, withoutVowels);
   }
@@ -116,12 +92,8 @@ public class SelectPatternTest
   public void TrimLastLetter()
   {
     var animals = new List<string> { "dog", "cat", "mouse", "frog", "platypus" };
-    
-    var trimmed = new List<string>();
-    foreach (var animal in animals)
-    {
-      trimmed.Add(animal[..^1]);
-    }
+
+    var trimmed = animals.Select(a => a[..^1]);
     
     Assert.Equal(new List<string> { "do", "ca", "mous", "fro", "platypu" }, trimmed);
   }

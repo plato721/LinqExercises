@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace LinqExercises.Solutions;
+namespace LinqExercises.Exercises;
 
 public class SelectPatternTest
 {
@@ -28,7 +28,7 @@ public class SelectPatternTest
     var doubles = new List<int>();
     foreach (var number in numbers)
     {
-      doubles.Add(number * 2);
+      // Your code here
     }
     
     Assert.Equal(new List<int> { 2, 4, 6, 8, 10 }, doubles);
@@ -40,10 +40,8 @@ public class SelectPatternTest
     var numbers = new List<int> { 1, 2, 3, 4, 5 };
     
     var squares = new List<int>();
-    foreach (var number in numbers)
-    {
-      squares.Add(number * number);
-    }
+    
+    // Your code here
     
     Assert.Equal(new List<int> { 1, 4, 9, 16, 25 }, squares);
   }
@@ -54,10 +52,8 @@ public class SelectPatternTest
     var names = new List<string> { "alice", "bob", "charlie", "david", "eve" };
     
     var lengths = new List<int>();
-    foreach (var name in names)
-    {
-      lengths.Add(name.Length);
-    }
+
+    // Your code here
     
     Assert.Equal(new List<int> { 5, 3, 7, 5, 3 }, lengths);
   }
@@ -68,11 +64,8 @@ public class SelectPatternTest
     var numbers = new List<int> { 234, 10, 9119, 38881 };
     
     var zipCodes = new List<string>();
-    foreach (var number in numbers)
-    {
-      var normalized = number.ToString().PadLeft(5, '0');
-      zipCodes.Add(normalized);
-    }
+
+    // Your code here
     
     Assert.Equal(new List<string>{ "00234", "00010", "09119", "38881" }, zipCodes);
   }
@@ -80,19 +73,11 @@ public class SelectPatternTest
   [Fact]
   public void Backwards()
   {
-    string ReverseString(string word)
-    {
-      char[] charArray = word.ToCharArray();
-      Array.Reverse(charArray);
-      return new string(charArray);
-    }
     var names = new List<string> { "alice", "bob", "charlie", "david", "eve" };
     
     var backwards = new List<string>();
-    foreach (var name in names)
-    {
-      backwards.Add(ReverseString(name));
-    }
+
+    // Your code here
     
     Assert.Equal(new List<string> { "ecila", "bob", "eilrahc", "divad", "eve" }, backwards);
   }
@@ -103,11 +88,8 @@ public class SelectPatternTest
     var words = new List<string> { "green", "sheep", "travel", "least", "boat" };
     
     var withoutVowels = new List<string>();
-    foreach (var word in words)
-    {
-      var noVowelsWord = Regex.Replace(word, "[aeiou]", "");
-      withoutVowels.Add(noVowelsWord);
-    }
+
+    // Your code here
     
     Assert.Equal(new List<string> { "grn", "shp", "trvl", "lst", "bt" }, withoutVowels);
   }
@@ -118,10 +100,8 @@ public class SelectPatternTest
     var animals = new List<string> { "dog", "cat", "mouse", "frog", "platypus" };
     
     var trimmed = new List<string>();
-    foreach (var animal in animals)
-    {
-      trimmed.Add(animal[..^1]);
-    }
+
+    // Your code here
     
     Assert.Equal(new List<string> { "do", "ca", "mous", "fro", "platypu" }, trimmed);
   }
