@@ -5,13 +5,13 @@ public class GroupByTest
   [Fact]
   public void GroupWordsByLength()
   {
-      var words = new List<string> { "sue", "alice", "steve", "sally", "adam", "fort", "tops", "dog", "cat" };
-      
-      var grouped = words.GroupBy(w => w.Length);
+    var words = new List<string> { "sue", "alice", "steve", "sally", "adam", "fort", "tops", "dog", "cat" };
 
-      Assert.Equal(new List<string>{ "sue", "dog", "cat" }, grouped.First(g => g.Key == 3));
-      Assert.Equal(new List<string>{ "adam", "fort", "tops" }, grouped.First(g => g.Key == 4));
-      Assert.Equal(new List<string>{ "alice", "steve", "sally" }, grouped.First(g => g.Key == 5));
+    var grouped = words.GroupBy(w => w.Length);
+
+    Assert.Equal(new List<string> { "sue", "dog", "cat" }, grouped.First(g => g.Key == 3));
+    Assert.Equal(new List<string> { "adam", "fort", "tops" }, grouped.First(g => g.Key == 4));
+    Assert.Equal(new List<string> { "alice", "steve", "sally" }, grouped.First(g => g.Key == 5));
   }
     
   [Fact]

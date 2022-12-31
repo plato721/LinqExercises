@@ -14,7 +14,7 @@ public class AggregatePatternTest
     Assert.Equal(473, result);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void SubtractListOfNumbers()
   {
     var numbers = new List<int> { 28, 12, 38, 1, 91 };
@@ -26,18 +26,18 @@ public class AggregatePatternTest
     Assert.Equal(-170, result);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void MultiplyListOfNumber()
   {
     var numbers = new List<int> { 2, 3, 5, 7 };
     var result = 1;
-    
+
     // Your code here
-    
+
     Assert.Equal(result, 210);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void CapitalizeKeywordsInPhraseOneFishTwoFishRedFishBlueFish()
   {
     var keywords = new List<string> { "fish", "blue" };
@@ -48,18 +48,18 @@ public class AggregatePatternTest
     Assert.Equal("one FISH two FISH red FISH BLUE FISH", result);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void Divide560ByABunchOfNumbers()
   {
     var numbers = new List<int>() { 2, 2, 2, 5, 7 };
     var result = 560;
-    
+
     // Your code here
 
     Assert.Equal(2, result);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void SubtractSmallestValuesFrom100()
   {
     var elements = new List<List<int>>
@@ -70,13 +70,13 @@ public class AggregatePatternTest
       new() { 19, 34, 6 }
     };
     var result = 100;
-    
+
     // Your code here
 
     Assert.Equal(88, result);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void AddAllTheSecondValuesTogether()
   {
     var elements = new List<List<object>>
@@ -86,7 +86,7 @@ public class AggregatePatternTest
       new() { "c", 21 }
     };
     var result = 0;
-    
+
     // Your code here
 
     Assert.Equal(31, result);
