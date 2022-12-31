@@ -12,25 +12,25 @@ public class SelectTest
     var capitalizedNames = names.Select(n =>
       n[..1].ToUpper() + n.Substring(1)
     );
-    
+
     var expectedNames = new List<string> { "Alice", "Bob", "Charlie" };
     Assert.Equal(capitalizedNames, expectedNames);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void Doubles()
   {
     var numbers = new List<int> { 1, 2, 3, 4, 5 };
-    
+
     var doubles = numbers.Select(n =>
       n // Replace 'n' with your code code. Can collapse into one line.
     );
-    
-    
+
+
     Assert.Equal(new List<int> { 2, 4, 6, 8, 10 }, doubles);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void Squares()
   {
     var numbers = new List<int> { 1, 2, 3, 4, 5 };
@@ -42,7 +42,7 @@ public class SelectTest
     Assert.Equal(new List<int> { 1, 4, 9, 16, 25 }, squares);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void Lengths()
   {
     var names = new List<string> { "alice", "bob", "charlie", "david", "eve" };
@@ -50,23 +50,23 @@ public class SelectTest
     var lengths = names.Select(n =>
       1 // Replace '1' with your code code. Can collapse into one line.
     );
-    
+
     Assert.Equal(new List<int> { 5, 3, 7, 5, 3 }, lengths);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void NormalizeZipCodes()
   {
     var numbers = new List<int> { 234, 10, 9119, 38881 };
 
-    var zipCodes = numbers.Select(n => 
+    var zipCodes = numbers.Select(n =>
       "00000" // Replace "00000" with your code code. Can collapse into one line.
     );
-    
+
     Assert.Equal(new List<string>{ "00234", "00010", "09119", "38881" }, zipCodes);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void Backwards()
   {
     var names = new List<string> { "alice", "bob", "charlie", "david", "eve" };
@@ -74,11 +74,11 @@ public class SelectTest
     var backwards = names.Select(n =>
       n // Replace 'n' with your code code. Can collapse into one line.
     );
-    
+
     Assert.Equal(new List<string> { "ecila", "bob", "eilrahc", "divad", "eve" }, backwards);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void WordsWithNoVowels()
   {
     var words = new List<string> { "green", "sheep", "travel", "least", "boat" };
@@ -86,11 +86,11 @@ public class SelectTest
     var withoutVowels = words.Select(w =>
       w // Replace 'n' with your code code. Can collapse into one line.
     );
-    
+
     Assert.Equal(new List<string> { "grn", "shp", "trvl", "lst", "bt" }, withoutVowels);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void TrimLastLetter()
   {
     var animals = new List<string> { "dog", "cat", "mouse", "frog", "platypus" };
@@ -98,7 +98,7 @@ public class SelectTest
     var trimmed = animals.Select(a =>
       a // Replace 'n' with your code code. Can collapse into one line.
     );
-    
+
     Assert.Equal(new List<string> { "do", "ca", "mous", "fro", "platypu" }, trimmed);
   }
 }

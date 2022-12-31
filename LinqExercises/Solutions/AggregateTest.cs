@@ -13,7 +13,7 @@ public class AggregateTest
     Assert.Equal(473, result);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void SubtractListOfNumbers()
   {
     var numbers = new List<int> { 28, 12, 38, 1, 91 };
@@ -24,7 +24,7 @@ public class AggregateTest
     Assert.Equal(-170, result);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void MultiplyListOfNumber()
   {
     var numbers = new List<int> { 2, 3, 5, 7 };
@@ -32,7 +32,7 @@ public class AggregateTest
     Assert.Equal(result, 210);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void CapitalizeKeywordsInPhraseOneFishTwoFishRedFishBlueFish()
   {
     var keywords = new List<string> { "fish", "blue" };
@@ -40,7 +40,7 @@ public class AggregateTest
     Assert.Equal("one FISH two FISH red FISH BLUE FISH", result);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void Divide560ByABunchOfNumbers()
   {
     var numbers = new List<int>() { 2, 2, 2, 5, 7 };
@@ -48,7 +48,7 @@ public class AggregateTest
     Assert.Equal(2, result);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void SubtractSmallestValuesFrom100()
   {
     var elements = new List<List<int>>
@@ -62,7 +62,7 @@ public class AggregateTest
     Assert.Equal(88, result);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void AddAllTheSecondValuesTogether()
   {
     var elements = new List<List<object>>
