@@ -65,8 +65,8 @@ Here's how we recommend you work through the exercises:
 * Open your text editor with two panes (left and right)
 * In the left pane, open the pattern file like `WherePatternTest.cs`
 * In the right pane, open the matching file like `WhereTest.cs`
-* Run the `WherePattern.cs` and solve the first exercise
-* Run the `select_test.cs` and solve the same exercise
+* Run the `WherePatternTest.cs` and solve the first exercise
+* Run the `WhereTest.cs` and solve the same exercise
 * Repeat for each matching pair of exercises
 * Commit your solutions after finishing each file
 
