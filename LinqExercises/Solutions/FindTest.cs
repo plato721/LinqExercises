@@ -10,7 +10,7 @@ public class FindTest
       var found = words.Find(w => w.Length == 7);
       Assert.Equal("unicorn", found);
   }
-    
+
   [Fact]
   public void NoWaldo()
   {
