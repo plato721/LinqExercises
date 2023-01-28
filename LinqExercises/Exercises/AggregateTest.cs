@@ -1,4 +1,4 @@
-namespace LinqExercises.Solutions;
+namespace LinqExercises.Exercises;
 
 public class AggregateTest
 {
@@ -13,51 +13,42 @@ public class AggregateTest
     Assert.Equal(473, result);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void SubtractListOfNumbers()
   {
     var numbers = new List<int> { 28, 12, 38, 1, 91 };
     var result = numbers.Aggregate(0, (difference, number) =>
     {
-      return difference - number;
+      return 0;  // Your code here (replace '0')
     });
     Assert.Equal(-170, result);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void MultiplyListOfNumber()
   {
     var numbers = new List<int> { 2, 3, 5, 7 };
-    var result = numbers.Aggregate(1, (product, number) =>
-    {
-      return product * number;
-    });
+    var result = 0; // Your code here (replace '0')
     Assert.Equal(result, 210);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void CapitalizeKeywordsInPhraseOneFishTwoFishRedFishBlueFish()
   {
     var keywords = new List<string> { "fish", "blue" };
-    var result = keywords.Aggregate("one fish two fish red fish blue fish", (phrase, keyword) =>
-    {
-      return phrase.Replace(keyword, keyword.ToUpper());
-    });
+    var result = "something"; // Your code here (replace "something")
     Assert.Equal("one FISH two FISH red FISH BLUE FISH", result);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void Divide560ByABunchOfNumbers()
   {
     var numbers = new List<int>() { 2, 2, 2, 5, 7 };
-    var result = numbers.Aggregate(560, (quotient, number) =>
-    {
-      return quotient / number;
-    });
+    var result = 0; // Your code here (replace '0')
     Assert.Equal(2, result);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void SubtractSmallestValuesFrom100()
   {
     var elements = new List<List<int>>
@@ -67,14 +58,11 @@ public class AggregateTest
       new() { 4, 7, 2 },
       new() { 19, 34, 6 }
     };
-    var result = elements.Aggregate(100, (difference, element) =>
-    {
-      return difference - element.Min();
-    });
+    var result = 0; // Your code here (replace '0')
     Assert.Equal(88, result);
   }
 
-  [Fact]
+  [Fact(Skip="Remove this when code is complete")]
   public void AddAllTheSecondValuesTogether()
   {
     var elements = new List<List<object>>
@@ -83,10 +71,7 @@ public class AggregateTest
       new() { "b", 9 },
       new() { "c", 21 }
     };
-    var result = elements.Aggregate(0, (sum, element) =>
-    {
-      return sum + (int)element[1];
-    });
+    var result = 0; // Your code here (replace '0')
     Assert.Equal(31, result);
   }
 }
