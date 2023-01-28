@@ -1,4 +1,25 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9fbc750f_002Dc1cd_002D40f5_002D887b_002D7dd4a205c94b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;LinqExercises&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Project Location="/Users/matty/projects/other/opensource/turing/linq2/LinqExercises/LinqExercises" Presentation="&amp;lt;LinqExercises&amp;gt;" /&gt;
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/matty/Library/Caches/JetBrains/Rider2022.3/resharper-host/temp/Rider/vAny/CoverageData/_LinqExercises.-880388778/Snapshot/snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bd979e42_002D026e_002D450e_002D9597_002D84b0a4a1094f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="NoWaldo" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;xUnit::4018163B-C4D9-4893-9B7A-1B0A8E10C72B::net6.0::LinqExercises.Solutions.FindTest.NoWaldo&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::4018163B-C4D9-4893-9B7A-1B0A8E10C72B::net6.0::LinqExercises.Solutions.OrderByTest.SortAlphabetically&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::4018163B-C4D9-4893-9B7A-1B0A8E10C72B::net6.0::LinqExercises.Solutions.OrderByTest.SortAlphabeticallyByLastLetter&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::4018163B-C4D9-4893-9B7A-1B0A8E10C72B::net6.0::LinqExercises.Solutions.OrderByTest.SortByDistance&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::4018163B-C4D9-4893-9B7A-1B0A8E10C72B::net6.0::LinqExercises.Solutions.OrderByTest.SortByLength&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::4018163B-C4D9-4893-9B7A-1B0A8E10C72B::net6.0::LinqExercises.Solutions.OrderByTest.SortByProximityToTen&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::4018163B-C4D9-4893-9B7A-1B0A8E10C72B::net6.0::LinqExercises.Solutions.OrderByTest.SortByNumberOfCents&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::4018163B-C4D9-4893-9B7A-1B0A8E10C72B::net6.0::LinqExercises.Solutions.OrderByPatternTest.SortAlphabetically&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::4018163B-C4D9-4893-9B7A-1B0A8E10C72B::net6.0::LinqExercises.Solutions.OrderByPatternTest.SortAlphabeticallyByLastLetter&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::4018163B-C4D9-4893-9B7A-1B0A8E10C72B::net6.0::LinqExercises.Solutions.OrderByPatternTest.SortByDistance&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::4018163B-C4D9-4893-9B7A-1B0A8E10C72B::net6.0::LinqExercises.Solutions.OrderByPatternTest.SortByLength&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::4018163B-C4D9-4893-9B7A-1B0A8E10C72B::net6.0::LinqExercises.Solutions.OrderByPatternTest.SortByProximityToTen&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::4018163B-C4D9-4893-9B7A-1B0A8E10C72B::net6.0::LinqExercises.Solutions.OrderByPatternTest.SortByNumberOfCents&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::4018163B-C4D9-4893-9B7A-1B0A8E10C72B::net6.0::LinqExercises.Exercises.OrderByPatternTest.SortAlphabeticallyByLastLetter&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::4018163B-C4D9-4893-9B7A-1B0A8E10C72B::net6.0::LinqExercises.Exercises.OrderByPatternTest&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+    &lt;ProjectFolder&gt;4018163B-C4D9-4893-9B7A-1B0A8E10C72B/d:Solutions&lt;/ProjectFolder&gt;
+    &lt;ProjectFile&gt;4018163B-C4D9-4893-9B7A-1B0A8E10C72B/d:Exercises/f:OrderByTest.cs&lt;/ProjectFile&gt;
+  &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
